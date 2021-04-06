@@ -6,6 +6,7 @@ drawing is a website which uses laravel and view.js to create an advanced "paint
     -free drawing
     -replay
     -layout using a drawing you did
+    -import image
    
 
 ## Installation
