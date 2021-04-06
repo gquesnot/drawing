@@ -3,8 +3,8 @@
 drawing is a website using laravel and view.js to implement fabric.js
 
 ## Installation
-
 	config .env
+    
 ```bash
 	composer install
 	npm install
