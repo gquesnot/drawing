@@ -33,8 +33,14 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::patch('settings/profile', [ProfileController::class, 'update']);
     Route::patch('settings/password', [PasswordController::class, 'update']);
     Route::get('userData',  [HomeController::class, 'index']);
-    Route::get('getData/{id}',  [HomeController::class, 'getDraw']);
-    Route::post('addData/{id}',  [HomeController::class, 'addData']);
+    Route::get('getDraw/{id}',  [HomeController::class, 'getDraw']);
+    Route::get('getImageList',  [HomeController::class, 'getImageList']);
+    Route::post('saveData/{id}',  [HomeController::class, 'saveData']);
+    Route::post('changeTitle/{id}',  [HomeController::class, 'changeTitle']);
+    Route::post('deleteDraw/{id}',  [HomeController::class, 'deleteDraw']);
+    Route::post('newDraw',  [HomeController::class, 'newDraw']);
+    Route::post('uploadImages',  [HomeController::class, 'uploadImages']);
+
 });
 
 Route::group(['middleware' => 'guest:api'], function () {
