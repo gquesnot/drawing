@@ -1,6 +1,12 @@
 # drawing
 
-drawing is a website using laravel and view.js to implement fabric.js
+drawing is a website which uses laravel and view.js to create an advanced "paint" by manipulating canvas thanks to the library [fabric.js](http://fabricjs.com/) 
+
+# Fonctionality
+    -free drawing
+    -replay
+    -layout using a drawing you did
+   
 
 ## Installation
 	config .env
